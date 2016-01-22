@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Maeve Tierney].
 
 
 # Your Solution Below
@@ -16,6 +16,7 @@ def factorial(number)
   end
 end
 
+#pseudocode here:
 #if 0, return 1
 #counter = 1
 #for n in (1..number)
