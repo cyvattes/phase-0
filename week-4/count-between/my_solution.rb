@@ -18,10 +18,23 @@ def count_between(list_of_integers, lower_bound, upper_bound)
   if list_of_integers.empty? == true
     return 0
   else
-    i = 0
-    #
-    #check each number in array is between lower and upper
-    #
-    return list_of_integers[0]
+    counter = 0
+    list_of_integers.each do |n|
+      if lower_bound <= n and n <= upper_bound
+        counter += 1
+      end
+    end
+    return counter
   end
 end
+
+#count_between([1..10], 0, 100)
+#counter = 0
+#list_of_integers.each do |n|
+#if lower_bound <= n <=upper_bound
+#counter += 1
+#end
+#return counter
+#
+#
+#
