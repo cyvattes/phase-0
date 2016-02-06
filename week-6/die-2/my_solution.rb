@@ -33,7 +33,8 @@ class Die
     unless labels.count > 0
       raise ArgumentError.new("Array must not be empty")
     end
-    @labels = labels
+    @labels = Array.new
+    labels.each { |label| @labels.push(label) }
   end
 
   def sides
@@ -41,7 +42,7 @@ class Die
   end
 
   def roll
-    return @labels.flatten
+    return @labels.shuffle
   end
 end
 
@@ -56,3 +57,14 @@ end
 
 
 # Reflection
+=begin
+What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
+  The main difference was that this challenge passed in an array of strings instead of a simple integer. The logic was almost identical.
+What does this exercise teach you about making code that is easily changeable or modifiable? 
+  Similar problems can often be solved with the same or similar methods and logic.
+What new methods did you learn when working on this challenge, if any?
+  No new methods were used in this challenge.
+What concepts about classes were you able to solidify in this challenge?
+  I was unable to get my final array to flatten (it always returned each element inside a sub-array), so I feel that I was unable to solidify my skills with this challenge.
+
+=end
