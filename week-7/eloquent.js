@@ -21,6 +21,12 @@ for (var counter = 1; counter <= 100; counter += 1) {
     console.log(counter);
   }
 }
+
+//The thing asked in the follow-up questions
+prompt("What's your favorite food?");
+alert("Hey! That's my favorite too!")
+
+
 // Functions
 
 // Complete the `minimum` exercise.
